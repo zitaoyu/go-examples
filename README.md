@@ -1,1 +1,1 @@
-# go-examples
+# a collection of go example.

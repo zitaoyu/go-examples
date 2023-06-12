@@ -14,11 +14,9 @@ func main() {
 	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
 
-	log.Printf("1")
-	log.Printf("2")
-	log.Printf("3")
+	names := []string{"Tommy", "Cosmo", "Tosmo"}
 
-	message, err := greetings.Hello("")
+	messages, err := greetings.Hellos(names)
 	// If an error was returned, print it to the console and
 	// exit the program.
 	if err != nil {
@@ -27,5 +25,5 @@ func main() {
 
 	// If no error was returned, print the returned message
 	// to the console.
-	fmt.Println(message)
+	fmt.Println(messages)
 }
